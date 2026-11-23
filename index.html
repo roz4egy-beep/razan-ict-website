@@ -22,7 +22,7 @@
   <meta property="og:type" content="website">
   <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Ctext%20y='0.9em'%20font-size='90'%3E%F0%9F%8E%93%3C/text%3E%3C/svg%3E">
   <title>HTML &amp; CSS التفاعلي | رزان شهاب - ICT</title>
-  <link rel="stylesheet" href="css/style.css?v=3">
+  <link rel="stylesheet" href="css/style.css?v=4">
 </head>
 <body>
 
@@ -51,6 +51,7 @@
         <a href="#about"><span class="ar">عن المشروع</span><span class="en">About</span></a>
         <a href="#html"><span class="ar">أوامر HTML</span><span class="en">HTML</span></a>
         <a href="#css"><span class="ar">أوامر CSS</span><span class="en">CSS</span></a>
+        <a href="#lab"><span class="ar">مختبر CSS</span><span class="en">CSS Lab</span></a>
         <a href="#history"><span class="ar">تاريخ البرمجة</span><span class="en">History</span></a>
         <a href="#editors"><span class="ar">المحرات</span><span class="en">Editors</span></a>
         <a href="#projects"><span class="ar">المشاريع</span><span class="en">Projects</span></a>
@@ -392,6 +393,99 @@
           <div class="demo">
             <div class="demo-spinner"></div>
             <p class="demo-cap">animation: spin infinite</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== مختبر CSS التفاعلي / CSS Visual Lab ===== -->
+      <section id="lab" class="section reveal">
+        <!-- أدوات التحكم — CSS فقط / controls (CSS only) -->
+        <input type="radio" name="lab-anim" id="lab-bounce" class="ctrl" checked>
+        <input type="radio" name="lab-anim" id="lab-slide" class="ctrl">
+        <input type="radio" name="lab-anim" id="lab-spin" class="ctrl">
+        <input type="radio" name="lab-anim" id="lab-glow" class="ctrl">
+        <input type="radio" name="lab-step" id="lab-s0" class="ctrl" checked>
+        <input type="radio" name="lab-step" id="lab-s1" class="ctrl">
+        <input type="radio" name="lab-step" id="lab-s2" class="ctrl">
+        <input type="radio" name="lab-step" id="lab-s3" class="ctrl">
+        <input type="radio" name="lab-step" id="lab-s4" class="ctrl">
+
+        <h2 class="sec-title"><span class="ar">🎯 مختبر CSS التفاعلي</span><span class="en">🎯 Interactive CSS Lab</span></h2>
+        <p class="sec-sub">
+          <span class="ar">تطبيق عملي مرئي: اختر نوع الحركة وحرّك الكلمة على الدرّاج، وشاهد النتيجة والكود المستخدم في نفس اللحظة — كل ذلك بـ CSS فقط بدون أي JavaScript.</span>
+          <span class="en">A hands-on visual exercise: pick a motion and slide the word along the track, then see the result and the exact CSS code instantly — all with pure CSS, zero JavaScript.</span>
+        </p>
+
+        <div class="lab-grid">
+          <!-- الجزء الأول: لوحة التحكم -->
+          <div class="lab-panel lab-controls">
+            <div class="lab-head">
+              <span class="lab-num">01</span>
+              <h3><span class="ar">لوحة التحكم</span><span class="en">Control Panel</span></h3>
+            </div>
+
+            <p class="lab-label"><span class="ar">اختر حركة الكلمة</span><span class="en">Pick the word motion</span></p>
+            <div class="lab-chips">
+              <label for="lab-bounce" class="lab-chip"><span class="ar">قفز ↥</span><span class="en">Bounce ↥</span></label>
+              <label for="lab-slide" class="lab-chip"><span class="ar">انزلاق →</span><span class="en">Slide →</span></label>
+              <label for="lab-spin" class="lab-chip"><span class="ar">دوران ↻</span><span class="en">Spin ↻</span></label>
+              <label for="lab-glow" class="lab-chip"><span class="ar">توهج ✦</span><span class="en">Glow ✦</span></label>
+            </div>
+
+            <p class="lab-label lab-label-step"><span class="ar">درّاج موضع الكلمة</span><span class="en">Word position slider</span></p>
+            <div class="lab-slider">
+              <div class="lab-rail"><span class="lab-fill"></span><span class="lab-thumb"></span></div>
+              <div class="lab-ticks">
+                <label for="lab-s0" class="lab-tick">0%</label>
+                <label for="lab-s1" class="lab-tick">25%</label>
+                <label for="lab-s2" class="lab-tick">50%</label>
+                <label for="lab-s3" class="lab-tick">75%</label>
+                <label for="lab-s4" class="lab-tick">100%</label>
+              </div>
+            </div>
+
+            <p class="lab-hint"><span class="ar">💡 جرّب الأزرار: كل اختيار بيغيّر العرض والكود في نفس الوقت — بدون JavaScript!</span><span class="en">💡 Try the buttons: every choice updates the preview and the code together — no JavaScript!</span></p>
+          </div>
+
+          <!-- الجزء الثاني: مسرح العرض -->
+          <div class="lab-panel lab-stage">
+            <div class="lab-head">
+              <span class="lab-num">02</span>
+              <h3><span class="ar">مسرح العرض والكود</span><span class="en">Live Stage &amp; Code</span></h3>
+            </div>
+
+            <div class="lab-canvas">
+              <div class="lab-word">&lt;HTML&gt;</div>
+            </div>
+
+            <div class="lab-codebox">
+              <pre class="lab-code code-bounce" dir="ltr"><code>.word {
+  animation: bounce 1.2s ease infinite;
+}
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-22px); }
+}</code></pre>
+              <pre class="lab-code code-slide" dir="ltr"><code>.word {
+  animation: slide 2s ease-in-out infinite;
+}
+@keyframes slide {
+  0%, 100% { transform: translateX(0); }
+  50%      { transform: translateX(40px); }
+}</code></pre>
+              <pre class="lab-code code-spin" dir="ltr"><code>.word {
+  animation: spin 3s linear infinite;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}</code></pre>
+              <pre class="lab-code code-glow" dir="ltr"><code>.word {
+  animation: glow 1.6s ease-in-out infinite;
+}
+@keyframes glow {
+  50% { text-shadow: 0 0 22px #6ea8fe; }
+}</code></pre>
+            </div>
           </div>
         </div>
       </section>
@@ -771,6 +865,7 @@
           <h4><span class="ar">أقسام الموقع</span><span class="en">Sections</span></h4>
           <a href="#html"><span class="ar">أوامر HTML</span><span class="en">HTML Tags</span></a>
           <a href="#css"><span class="ar">أوامر CSS</span><span class="en">CSS Properties</span></a>
+          <a href="#lab"><span class="ar">مختبر CSS</span><span class="en">CSS Lab</span></a>
           <a href="#history"><span class="ar">تاريخ البرمجة</span><span class="en">Language History</span></a>
           <a href="#editors"><span class="ar">المحرات المجانية</span><span class="en">Free Editors</span></a>
         </div>
