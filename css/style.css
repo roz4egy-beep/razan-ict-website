@@ -653,10 +653,55 @@ img { max-width: 100%; }
 }
 
 /* ========== 12) تاريخ اللغات / History ========== */
-.gen-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
-  gap: 16px;
+/* سلايدر أجيال اللغات — CSS فقط / CSS-only generations slider */
+.gen-slider { position: relative; max-width: 820px; margin: 0 auto; }
+.gen-viewport { overflow: hidden; border-radius: 22px; }
+.gen-track { display: flex; direction: ltr; transition: transform .6s cubic-bezier(.22, .8, .25, 1); }
+.gen-track .gen-card {
+  flex: 0 0 100%;
+  min-height: 290px;
+  margin: 0;
+  padding: 40px 46px 28px;
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#lang:checked ~ .page .gen-track .gen-card { direction: ltr; }
+#gen-2:checked ~ .gen-viewport .gen-track { transform: translateX(-100%); }
+#gen-3:checked ~ .gen-viewport .gen-track { transform: translateX(-200%); }
+#gen-4:checked ~ .gen-viewport .gen-track { transform: translateX(-300%); }
+#gen-5:checked ~ .gen-viewport .gen-track { transform: translateX(-400%); }
+
+.gen-dots { display: flex; justify-content: center; gap: 10px; margin-top: 18px; }
+.gen-dot {
+  width: 36px; height: 36px;
+  display: grid; place-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--muted);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  transition: transform .3s ease, box-shadow .3s ease, color .3s ease, border-color .3s ease;
+}
+.gen-dot:hover { transform: translateY(-3px); color: var(--text); border-color: var(--accent-1); }
+#gen-1:checked ~ .gen-dots .gen-dot[for="gen-1"],
+#gen-2:checked ~ .gen-dots .gen-dot[for="gen-2"],
+#gen-3:checked ~ .gen-dots .gen-dot[for="gen-3"],
+#gen-4:checked ~ .gen-dots .gen-dot[for="gen-4"],
+#gen-5:checked ~ .gen-dots .gen-dot[for="gen-5"] {
+  color: #fff;
+  background: var(--grad);
+  background-size: 250%;
+  border-color: transparent;
+  box-shadow: 0 8px 20px var(--glow);
+  transform: scale(1.12);
+  animation: grad-pan 7s ease infinite;
+}
+@media (max-width: 560px) {
+  .gen-track .gen-card { padding: 30px 22px 22px; min-height: 320px; }
 }
 .gen-card {
   position: relative;
