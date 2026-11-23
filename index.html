@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  ✍️ إمضاء الطالبة / Signature:
+  تم برمجة هذا الموقع بالكامل بواسطة الطالبة: رزان شهاب
+  Coded entirely by the student: Razan Shehab
+  المدرسة: مدرسة معالي الإسلام | School: Maali Al-Islam School
+  المادة: Information Communication Technology (ICT)
+  الإشراف: مستر بلال اشرف | Supervised by: Mr. Bilal Ashraf
+  Email: roz4egy@gmail.com
+  ============================================================
+-->
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Razan Shehab - رزان شهاب">
+  <meta name="description" content="مرجع تفاعلي لأوامر HTML و CSS ونبذة عن تأسيس وتطوير لغات البرمجة - مشروع الطالبة رزان شهاب - مادة ICT">
+  <meta name="theme-color" content="#070b1e">
+  <meta property="og:title" content="دليل HTML & CSS التفاعلي | رزان شهاب">
+  <meta property="og:description" content="مرجع الطلاب في أوامر HTML و CSS ومحرات الكود المجانية ومشاريع ICT">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Ctext%20y='0.9em'%20font-size='90'%3E%F0%9F%8E%93%3C/text%3E%3C/svg%3E">
+  <title>HTML &amp; CSS التفاعلي | رزان شهاب - ICT</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== عناصر التحكم (CSS فقط بدون JavaScript) / Controls (CSS only, no JS) ===== -->
+  <input type="checkbox" id="lang" class="ctrl" aria-label="تبديل اللغة / Switch language">
+  <input type="radio" name="theme" id="t1" class="ctrl" checked aria-label="لون أزرق">
+  <input type="radio" name="theme" id="t2" class="ctrl" aria-label="لون بنفسجي">
+  <input type="radio" name="theme" id="t3" class="ctrl" aria-label="لون أخضر">
+  <input type="radio" name="theme" id="t4" class="ctrl" aria-label="لون برتقالي">
+  <input type="radio" name="theme" id="t5" class="ctrl" aria-label="فاتح">
+
+  <div class="page">
+
+    <!-- ===== الشريط العلوي / Navbar ===== -->
+    <header class="nav">
+      <a href="#home" class="logo">
+        <span class="logo-icon">&lt;/&gt;</span>
+        <span class="logo-text">
+          <span class="ar">دليل <b>ICT</b></span>
+          <span class="en"><b>ICT</b> Guide</span>
+        </span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#home"><span class="ar">الرئيسية</span><span class="en">Home</span></a>
+        <a href="#about"><span class="ar">عن المشروع</span><span class="en">About</span></a>
+        <a href="#html"><span class="ar">أوامر HTML</span><span class="en">HTML</span></a>
+        <a href="#css"><span class="ar">أوامر CSS</span><span class="en">CSS</span></a>
+        <a href="#history"><span class="ar">تاريخ البرمجة</span><span class="en">History</span></a>
+        <a href="#editors"><span class="ar">المحرات</span><span class="en">Editors</span></a>
+        <a href="#projects"><span class="ar">المشاريع</span><span class="en">Projects</span></a>
+        <a href="#github"><span class="ar">GitHub</span><span class="en">GitHub</span></a>
+      </nav>
+
+      <div class="nav-tools">
+        <!-- تبديل اللغة / Language switch (CSS only) -->
+        <label for="lang" class="lang-btn" title="English / العربية">
+          <span class="ar">EN</span>
+          <span class="en">ع</span>
+        </label>
+        <!-- مبدّل ألوان الخلفية / Background colors (CSS only) -->
+        <div class="swatches" role="group" aria-label="ألوان الخلفية">
+          <label for="t1" class="swatch swatch-1" title="أزرق"></label>
+          <label for="t2" class="swatch swatch-2" title="بنفسجي"></label>
+          <label for="t3" class="swatch swatch-3" title="أخضر"></label>
+          <label for="t4" class="swatch swatch-4" title="برتقالي"></label>
+          <label for="t5" class="swatch swatch-5" title="فاتح"></label>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- ===== القسم الرئيسي / Hero ===== -->
+      <section id="home" class="hero">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+
+        <div class="code-chip chip-1">&lt;div class="card"&gt;</div>
+        <div class="code-chip chip-2">display: flex;</div>
+        <div class="code-chip chip-3">&lt;h1&gt;</div>
+        <div class="code-chip chip-4">.header { }</div>
+        <div class="code-chip chip-5">&lt;a href&gt;</div>
+        <div class="code-chip chip-6">color: #6ea8fe;</div>
+
+        <div class="hero-inner">
+          <p class="badge glow-pulse">
+            <span class="ar">🎓 مشروع مادة الاتصالات وتكنولوجيا المعلومات — ICT</span>
+            <span class="en">🎓 ICT Project — Information Communication Technology</span>
+          </p>
+
+          <h1 class="hero-title">
+            <span class="ar">دليلك التفاعلي لتعلّم <span class="grad-text">HTML و CSS</span></span>
+            <span class="en">Your Interactive Guide to <span class="grad-text">HTML &amp; CSS</span></span>
+          </h1>
+
+          <p class="hero-sub">
+            <span class="ar">كل الأوامر والخصائص في مكان واحد، مع نبذة عن تأسيس وتطوير لغات البرمجة، وروابط أفضل المحررات المجانية، ومرجع جاهز لعمل مشاريعك المدرسية.</span>
+            <span class="en">All tags and properties in one place, plus the story of programming languages, the best free editors, and a ready reference for your school projects.</span>
+          </p>
+
+          <p class="type-line" dir="ltr"><span class="type-text">&lt;html&gt; &lt;body&gt; Hello, World! &lt;/body&gt; &lt;/html&gt;</span><span class="cursor">|</span></p>
+
+          <div class="hero-cta">
+            <a href="#html" class="btn btn-primary"><span class="ar">ابدأ التعلّم الآن</span><span class="en">Start Learning</span></a>
+            <a href="#projects" class="btn btn-ghost"><span class="ar">أفكار المشاريع</span><span class="en">Project Ideas</span></a>
+          </div>
+
+          <div class="stats">
+            <div class="stat"><b>50+</b><span class="ar">أمر HTML</span><span class="en">HTML Tags</span></div>
+            <div class="stat"><b>70+</b><span class="ar">خاصية CSS</span><span class="en">CSS Properties</span></div>
+            <div class="stat"><b>15+</b><span class="ar">لغة في التاريخ</span><span class="en">Languages</span></div>
+            <div class="stat"><b>12</b><span class="ar">محرّر مجاني</span><span class="en">Free Editors</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== شريط متحرك / Animated ticker ===== -->
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+          <span>&lt;html&gt;</span><span>&lt;head&gt;</span><span>&lt;body&gt;</span><span>&lt;h1&gt;</span><span>&lt;p&gt;</span><span>&lt;a&gt;</span><span>&lt;img&gt;</span><span>&lt;ul&gt;</span><span>&lt;table&gt;</span><span>&lt;form&gt;</span><span>&lt;input&gt;</span><span>&lt;div&gt;</span><span>&lt;span&gt;</span><span>&lt;section&gt;</span><span>&lt;footer&gt;</span><span>margin</span><span>padding</span><span>flexbox</span><span>grid</span><span>:hover</span><span>@media</span><span>--var</span><span>transition</span><span>transform</span><span>@keyframes</span>
+          <span>&lt;html&gt;</span><span>&lt;head&gt;</span><span>&lt;body&gt;</span><span>&lt;h1&gt;</span><span>&lt;p&gt;</span><span>&lt;a&gt;</span><span>&lt;img&gt;</span><span>&lt;ul&gt;</span><span>&lt;table&gt;</span><span>&lt;form&gt;</span><span>&lt;input&gt;</span><span>&lt;div&gt;</span><span>&lt;span&gt;</span><span>&lt;section&gt;</span><span>&lt;footer&gt;</span><span>margin</span><span>padding</span><span>flexbox</span><span>grid</span><span>:hover</span><span>@media</span><span>--var</span><span>transition</span><span>transform</span><span>@keyframes</span>
+        </div>
+      </div>
+
+      <!-- ===== عن المشروع / About ===== -->
+      <section id="about" class="section reveal">
+        <h2 class="sec-title"><span class="ar">📜 عن هذا المشروع</span><span class="en">📜 About This Project</span></h2>
+        <p class="sec-sub">
+          <span class="ar">موقع تعليمي تفاعلي أنشأته الطالبة <b>رزان شهاب</b> لتكون فيه مرجعًا شاملًا لطلاب مادة الاتصالات وتكنولوجيا المعلومات (ICT) في أوامر HTML و CSS، مبني بالكامل بلغتي HTML و CSS فقط مع أنيماشن CSS.</span>
+          <span class="en">An interactive educational website created by the student <b>Razan Shehab</b> as a complete reference for ICT students on HTML and CSS commands — built with only HTML &amp; CSS and pure CSS animations.</span>
+        </p>
+
+        <div class="info-grid">
+          <div class="info-card">
+            <div class="info-ico">👩‍🎓</div>
+            <h3><span class="ar">اسم الطالبة</span><span class="en">Student Name</span></h3>
+            <p>رزان شهاب / Razan Shehab</p>
+          </div>
+          <div class="info-card">
+            <div class="info-ico">🏫</div>
+            <h3><span class="ar">المدرسة</span><span class="en">School</span></h3>
+            <p><span class="ar">مدرسة معالي الإسلام</span><span class="en">Maali Al-Islam School</span></p>
+          </div>
+          <div class="info-card">
+            <div class="info-ico">👨‍🏫</div>
+            <h3><span class="ar">أشراف المدرس</span><span class="en">Supervisor</span></h3>
+            <p><span class="ar">مستر بلال اشرف</span><span class="en">Mr. Bilal Ashraf</span></p>
+          </div>
+          <div class="info-card">
+            <div class="info-ico">💻</div>
+            <h3><span class="ar">المادة</span><span class="en">Subject</span></h3>
+            <p>Information Communication Technology (ICT)</p>
+          </div>
+          <div class="info-card">
+            <div class="info-ico">📧</div>
+            <h3><span class="ar">البريد الإلكتروني</span><span class="en">Email</span></h3>
+            <p><a href="mailto:roz4egy@gmail.com" dir="ltr">roz4egy@gmail.com</a></p>
+          </div>
+          <div class="info-card">
+            <div class="info-ico">facebook</div>
+            <h3><span class="ar">صفحة الفيسبوك</span><span class="en">Facebook Page</span></h3>
+            <p><a href="https://www.facebook.com/share/g/1FdMwbRAgD/" target="_blank" rel="noopener"><span class="ar">زيارة الصفحة ↗</span><span class="en">Visit Page ↗</span></a></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== أوامر HTML / HTML Reference ===== -->
+      <section id="html" class="section reveal">
+        <h2 class="sec-title"><span class="ar">🧱 أوامر HTML ودلالاتها</span><span class="en">🧱 HTML Tags &amp; Meanings</span></h2>
+        <p class="sec-sub">
+          <span class="ar">HTML هي لغة ترميز النصوص (HyperText Markup Language) وهي الهيكل الأساسي لأي صفحة ويب. الأمر يُكتب بين قوسين شاربين هكذا: <code dir="ltr">&lt;tag&gt;</code> ويُغلق بشرطة مائلة: <code dir="ltr">&lt;/tag&gt;</code>.</span>
+          <span class="en">HTML (HyperText Markup Language) is the skeleton of every web page. A tag is written between angle brackets <code dir="ltr">&lt;tag&gt;</code> and closed with <code dir="ltr">&lt;/tag&gt;</code>.</span>
+        </p>
+
+        <div class="code-window">
+          <div class="cw-bar"><i></i><i></i><i></i><span>index.html</span></div>
+          <pre dir="ltr"><code><span class="c-com">&lt;!-- أول أمر في أي صفحة HTML --&gt;</span>
+<span class="c-tag">&lt;!DOCTYPE html&gt;</span>
+<span class="c-tag">&lt;html</span> <span class="c-attr">lang</span>=<span class="c-str">"ar"</span><span class="c-tag">&gt;</span>
+  <span class="c-tag">&lt;head&gt;</span>
+    <span class="c-tag">&lt;meta</span> <span class="c-attr">charset</span>=<span class="c-str">"UTF-8"</span><span class="c-tag">&gt;</span>
+    <span class="c-tag">&lt;title&gt;</span><span class="c-txt">صفحتي الأولى</span><span class="c-tag">&lt;/title&gt;</span>
+    <span class="c-tag">&lt;link</span> <span class="c-attr">rel</span>=<span class="c-str">"stylesheet"</span> <span class="c-attr">href</span>=<span class="c-str">"style.css"</span><span class="c-tag">&gt;</span>
+  <span class="c-tag">&lt;/head&gt;</span>
+  <span class="c-tag">&lt;body&gt;</span>
+    <span class="c-tag">&lt;h1&gt;</span><span class="c-txt">مرحبًا بالعالم</span><span class="c-tag">&lt;/h1&gt;</span>
+    <span class="c-tag">&lt;p&gt;</span><span class="c-txt">هذه أول فقرة لي.</span><span class="c-tag">&lt;/p&gt;</span>
+  <span class="c-tag">&lt;/body&gt;</span>
+<span class="c-tag">&lt;/html&gt;</span></code></pre>
+        </div>
+
+        <h3 class="sub-title"><span class="ar">1️⃣ أوامر بنية الصفحة</span><span class="en">1️⃣ Page Structure Tags</span></h3>
+        <div class="tag-grid">
+          <div class="tag-card"><code dir="ltr">&lt;!DOCTYPE html&gt;</code><p><span class="ar">يُخبر المتصفح أن الصفحة من نوع HTML5</span><span class="en">Declares the document as HTML5</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;html&gt;</code><p><span class="ar">الجذر الذي يحتوي على كل الصفحة</span><span class="en">The root element of the page</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;head&gt;</code><p><span class="ar">الرأس: بيانات لا تظهر للمستخدم</span><span class="en">Head: invisible metadata</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;body&gt;</code><p><span class="ar">الجسم: كل ما يظهر في المتصفح</span><span class="en">Body: everything visible</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;title&gt;</code><p><span class="ar">عنوان التبويب في المتصفح</span><span class="en">The browser tab title</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;meta&gt;</code><p><span class="ar">بيانات وصفية مثل الترميز والوصف</span><span class="en">Metadata: charset, description</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;link&gt;</code><p><span class="ar">يربط الصفحة بملف CSS أو أيقونة</span><span class="en">Links CSS file or favicon</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;style&gt;</code><p><span class="ar">يكتب أوامر CSS داخل الصفحة</span><span class="en">Embeds CSS inside the page</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;script&gt;</code><p><span class="ar">يكتب أوامر JavaScript (اختياري)</span><span class="en">Embeds JavaScript (optional)</span></p></div>
+        </div>
+
+        <h3 class="sub-title"><span class="ar">2️⃣ أوامر النصوص والعناوين</span><span class="en">2️⃣ Text &amp; Headings</span></h3>
+        <div class="tag-grid">
+          <div class="tag-card"><code dir="ltr">&lt;h1&gt; ... &lt;h6&gt;</code><p><span class="ar">عناوين من الأكبر h1 إلى الأصغر h6</span><span class="en">Headings, largest h1 → smallest h6</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;p&gt;</code><p><span class="ar">فقرة نصية</span><span class="en">A paragraph of text</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;br&gt;</code><p><span class="ar">سطر جديد (لا يحتاج إغلاق)</span><span class="en">Line break (no closing tag)</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;hr&gt;</code><p><span class="ar">خط فاصل أفقي</span><span class="en">Horizontal rule</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;strong&gt;</code><p><span class="ar">نص مهم وعريض (تقنيًا مهم للقارئ الصوتي)</span><span class="en">Bold + semantically important</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;b&gt;</code><p><span class="ar">نص عريض فقط بدون أهمية</span><span class="en">Bold text only</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;em&gt;</code><p><span class="ar">نص مُ stressing (مائل مع تأكيد)</span><span class="en">Emphasized (italic + meaning)</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;i&gt;</code><p><span class="ar">نص مائل (مصطلح، لغة أجنبية)</span><span class="en">Italic (terms, foreign words)</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;u&gt;</code><p><span class="ar">نص مُسطَّر</span><span class="en">Underlined text</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;mark&gt;</code><p><span class="ar">تمييز نص بخلفية صفراء</span><span class="en">Highlights text (yellow)</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;small&gt;</code><p><span class="ar">نص أصغر حجمًا (ملاحظات)</span><span class="en">Smaller text (notes)</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;span&gt;</code><p><span class="ar">حاوية داخلية سطحية بدون تأثير</span><span class="en">Inline container (no effect)</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;div&gt;</code><p><span class="ar">حاوية كتلة عامة لتنظيم العناصر</span><span class="en">Generic block container</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;blockquote&gt;</code><p><span class="ar">اقتباس طويل مع إزاحة</span><span class="en">Long indented quotation</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;abbr&gt;</code><p><span class="ar">اختصار مع شرح بالسمة title</span><span class="en">Abbreviation with title tooltip</span></p></div>
+        </div>
+
+        <h3 class="sub-title"><span class="ar">3️⃣ القوائم والروابط والصور</span><span class="en">3️⃣ Lists, Links &amp; Images</span></h3>
+        <div class="tag-grid">
+          <div class="tag-card"><code dir="ltr">&lt;ul&gt;</code><p><span class="ar">قائمة غير مرتبة (نقاط)</span><span class="en">Unordered (bulleted) list</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;ol&gt;</code><p><span class="ar">قائمة مرتبة (أرقام)</span><span class="en">Ordered (numbered) list</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;li&gt;</code><p><span class="ar">عنصر داخل القائمة</span><span class="en">A list item</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;dl&gt;&lt;dt&gt;&lt;dd&gt;</code><p><span class="ar">قائمة تعريفية: مصطلح وشرحه</span><span class="en">Definition list: term + description</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;a href&gt;</code><p><span class="ar">رابط تنقل: href="العنوان"</span><span class="en">Anchor link with href="url"</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;img src&gt;</code><p><span class="ar">صورة: src="المسار" + alt="البديل"</span><span class="en">Image: src + alt text</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;a target="_blank"&gt;</code><p><span class="ar">فتح الرابط في تبويب جديد</span><span class="en">Opens link in a new tab</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;a href="#id"&gt;</code><p><span class="ar">انتقال لعنصر بنفس المعرّف داخل الصفحة</span><span class="en">Jump to an element in the page</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;figure&gt;&lt;figcaption&gt;</code><p><span class="ar">صورة/رسم مع تسمية له</span><span class="en">Media element with a caption</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;video&gt; &lt;audio&gt;</code><p><span class="ar">تشغيل فيديو أو صوت</span><span class="en">Play video or audio</span></p></div>
+        </div>
+
+        <h3 class="sub-title"><span class="ar">4️⃣ الجداول</span><span class="en">4️⃣ Tables</span></h3>
+        <div class="tag-grid">
+          <div class="tag-card"><code dir="ltr">&lt;table&gt;</code><p><span class="ar">الجدول بالكامل</span><span class="en">The whole table</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;tr&gt;</code><p><span class="ar">صف واحد داخل الجدول</span><span class="en">A table row</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;th&gt;</code><p><span class="ar">خلية عنوان (عريضة ومتوسطة)</span><span class="en">Header cell (bold, centered)</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;td&gt;</code><p><span class="ar">خلية بيانات عادية</span><span class="en">A normal data cell</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;caption&gt;</code><p><span class="ar">عنوان/تسمية للجدول</span><span class="en">The table caption</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;thead&gt;&lt;tbody&gt;</code><p><span class="ar">تقسيم الجدول لرأس وجسم</span><span class="en">Splits head and body sections</span></p></div>
+        </div>
+
+        <h3 class="sub-title"><span class="ar">5️⃣ النماذج (ال الفورم )</span><span class="en">5️⃣ Forms &amp; Inputs</span></h3>
+        <div class="tag-grid">
+          <div class="tag-card"><code dir="ltr">&lt;form&gt;</code><p><span class="ar">حاوية النموذج + action و method</span><span class="en">Form container with action &amp; method</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;input type="text"&gt;</code><p><span class="ar">حقل نصي قصير</span><span class="en">Single-line text field</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;input type="password"&gt;</code><p><span class="ar">كلمة مرور مخفية</span><span class="en">Hidden password field</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;input type="email"&gt;</code><p><span class="ar">بريد إلكتروني مع تحقق</span><span class="en">Email field with validation</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;input type="number"&gt;</code><p><span class="ar">أرقام فقط مع أزرار زيادة</span><span class="en">Numbers only with steppers</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;input type="date"&gt;</code><p><span class="ar">منتقي تاريخ</span><span class="en">Date picker</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;input type="checkbox"&gt;</code><p><span class="ar">مربع اختيار (اختيار متعدد)</span><span class="en">Checkbox (multi-select)</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;input type="radio"&gt;</code><p><span class="ar">زر اختيار (واحد فقط)</span><span class="en">Radio button (single choice)</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;input type="color"&gt;</code><p><span class="ar">منتقي ألوان</span><span class="en">Color picker</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;input type="range"&gt;</code><p><span class="ar">شريط تمرير منزلق</span><span class="en">Slider / range control</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;textarea&gt;</code><p><span class="ar">منطقة نص متعدد الأسطر</span><span class="en">Multi-line text area</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;select&gt;&lt;option&gt;</code><p><span class="ar">قائمة منسدلة بالاختيارات</span><span class="en">Dropdown list of options</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;button&gt;</code><p><span class="ar">زر قابل للضغط</span><span class="en">A clickable button</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;label&gt;</code><p><span class="ar">تسمية الحقل (تضغط عليه تفعّله)</span><span class="en">Field label (click focuses input)</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;fieldset&gt;&lt;legend&gt;</code><p><span class="ar">تجميع حقول مع عنوان للمجموعة</span><span class="en">Groups fields with a legend</span></p></div>
+        </div>
+
+        <h3 class="sub-title"><span class="ar">6️⃣ البنية الدلالية (Semantic)</span><span class="en">6️⃣ Semantic Structure</span></h3>
+        <div class="tag-grid">
+          <div class="tag-card"><code dir="ltr">&lt;header&gt;</code><p><span class="ar">ترويسة الصفحة أو القسم</span><span class="en">Page or section header</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;nav&gt;</code><p><span class="ar">القائمة الرئيسية للتنقل</span><span class="en">Main navigation menu</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;main&gt;</code><p><span class="ar">المحتوى الرئيسي الفريد للصفحة</span><span class="en">The unique main content</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;section&gt;</code><p><span class="ar">قسم من المحتوى له عنوان</span><span class="en">A titled content section</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;article&gt;</code><p><span class="ar">مقال أو محتوى مستقل قابل للمشاركة</span><span class="en">Independent article/post</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;aside&gt;</code><p><span class="ar">محتوى جانبي مرتبط بالأساسي</span><span class="en">Related sidebar content</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;footer&gt;</code><p><span class="ar">تذييل الصفحة: حقوق ومعلومات</span><span class="en">Page footer: credits &amp; info</span></p></div>
+          <div class="tag-card"><code dir="ltr">&lt;hgroup&gt;</code><p><span class="ar">تجميع عنوان ووصف معًا</span><span class="en">Groups a heading + subheading</span></p></div>
+        </div>
+
+        <h3 class="sub-title"><span class="ar">7️⃣ الكيانات الخاصة (Entities)</span><span class="en">7️⃣ Special Entities</span></h3>
+        <div class="tag-grid">
+          <div class="tag-card"><code dir="ltr">&amp;lt; &amp;gt;</code><p><span class="ar">عرض &lt; و &gt; كنص عادي</span><span class="en">Displays &lt; and &gt; as text</span></p></div>
+          <div class="tag-card"><code dir="ltr">&amp;amp;</code><p><span class="ar">علامة &amp;</span><span class="en">The &amp; character</span></p></div>
+          <div class="tag-card"><code dir="ltr">&amp;nbsp;</code><p><span class="ar">مسافة غير قابلة للكسر</span><span class="en">Non-breaking space</span></p></div>
+          <div class="tag-card"><code dir="ltr">&amp;copy; &amp;reg;</code><p><span class="ar">رموز الحقوق © و ©</span><span class="en">© and ® symbols</span></p></div>
+          <div class="tag-card"><code dir="ltr">&amp;quot;</code><p><span class="ar">علامة اقتباس مزدوجة "</span><span class="en">Double quotation mark "</span></p></div>
+          <div class="tag-card"><code dir="ltr">&amp;#128512;</code><p><span class="ar">أي رمز بترميزه العددي (إيموجي)</span><span class="en">Any symbol by numeric code</span></p></div>
+        </div>
+      </section>
+
+      <!-- ===== أوامر CSS / CSS Reference ===== -->
+      <section id="css" class="section reveal">
+        <h2 class="sec-title"><span class="ar">🎨 أوامر CSS وخصائصها</span><span class="en">🎨 CSS Commands &amp; Properties</span></h2>
+        <p class="sec-sub">
+          <span class="ar">CSS هي لغة تنسيم الصفحات (Cascading Style Sheets) وهي التي تمنح الموقع شكله وألوانه وحركته. تتكون من مُحدِّد (selector) وخاصية وقيمة بين قوسين معقوفين.</span>
+          <span class="en">CSS (Cascading Style Sheets) styles the page — its colors, layout and motion. It consists of a selector, a property and a value inside curly braces.</span>
+        </p>
+
+        <div class="code-window">
+          <div class="cw-bar"><i></i><i></i><i></i><span>style.css</span></div>
+          <pre dir="ltr"><code><span class="c-com">/* Selector { Property: Value; } */</span>
+<span class="c-sel">h1</span> { <span class="c-prop">color</span>: <span class="c-val">#6ea8fe</span>; <span class="c-prop">font-size</span>: <span class="c-val">32px</span>; }
+
+<span class="c-sel">.card</span> { <span class="c-prop">background</span>: <span class="c-val">#0f1533</span>; <span class="c-prop">padding</span>: <span class="c-val">20px</span>; <span class="c-prop">border-radius</span>: <span class="c-val">16px</span>; }
+<span class="c-sel">#main</span> { <span class="c-prop">margin</span>: <span class="c-val">auto</span>; <span class="c-prop">max-width</span>: <span class="c-val">1100px</span>; }
+<span class="c-sel">a:hover</span> { <span class="c-prop">color</span>: <span class="c-val">orange</span>; }      <span class="c-com">/* عند مرور الفأرة */</span>
+<span class="c-sel">.box &gt; p</span> { <span class="c-prop">line-height</span>: <span class="c-val">1.8</span>; }     <span class="c-com">/* ابن مباشر */</span></code></pre>
+        </div>
+
+        <h3 class="sub-title"><span class="ar">1️⃣ المُحدِّدات (Selectors)</span><span class="en">1️⃣ Selectors</span></h3>
+        <div class="tag-grid">
+          <div class="tag-card"><code dir="ltr">element</code><p><span class="ar">تحديد الكل بنفس النوع مثل p أو h1</span><span class="en">Targets all elements of a type</span></p></div>
+          <div class="tag-card"><code dir="ltr">.class</code><p><span class="ar">تحديد فئة (الأكثر استخدامًا والمرن)</span><span class="en">Targets a class (most flexible)</span></p></div>
+          <div class="tag-card"><code dir="ltr">#id</code><p><span class="ar">تحديد عنصر فريد واحد بالمعرّف</span><span class="en">Targets one unique element</span></p></div>
+          <div class="tag-card"><code dir="ltr">*</code><p><span class="ar">كل العناصر في الصفحة</span><span class="en">Every element on the page</span></p></div>
+          <div class="tag-card"><code dir="ltr">div p</code><p><span class="ar">أي p داخل div (نسل)</span><span class="en">Any p inside div (descendant)</span></p></div>
+          <div class="tag-card"><code dir="ltr">div &gt; p</code><p><span class="ar">p ابن مباشر لـ div فقط</span><span class="en">Direct child p of div only</span></p></div>
+          <div class="tag-card"><code dir="ltr">h2 + p</code><p><span class="ar">p الملاصق التالي لـ h2</span><span class="en">The p right after h2</span></p></div>
+          <div class="tag-card"><code dir="ltr">h2 ~ p</code><p><span class="ar">كل p يأتي بعد h2</span><span class="en">All p siblings after h2</span></p></div>
+          <div class="tag-card"><code dir="ltr">a[target]</code><p><span class="ar">عنصر يملك خاصية معينة</span><span class="en">Elements having an attribute</span></p></div>
+          <div class="tag-card"><code dir="ltr">a[target="_blank"]</code><p><span class="ar">عنصر بقيمة محددة للسمة</span><span class="en">Attribute with exact value</span></p></div>
+          <div class="tag-card"><code dir="ltr">li:first-child</code><p><span class="ar">أول عنصر ابن داخل الحاوية</span><span class="en">The first child inside a parent</span></p></div>
+          <div class="tag-card"><code dir="ltr">li:last-child</code><p><span class="ar">آخر عنصر ابن</span><span class="en">The last child element</span></p></div>
+          <div class="tag-card"><code dir="ltr">li:nth-child(2)</code><p><span class="ar">العنصر الثاني (أو odd / even)</span><span class="en">The 2nd item (or odd/even)</span></p></div>
+          <div class="tag-card"><code dir="ltr">p::before</code><p><span class="ar">إضافة محتوى قبل العنصر</span><span class="en">Injects content before the element</span></p></div>
+          <div class="tag-card"><code dir="ltr">p::after</code><p><span class="ar">إضافة محتوى بعد العنصر</span><span class="en">Injects content after the element</span></p></div>
+          <div class="tag-card"><code dir="ltr">input:focus</code><p><span class="ar">الحالة عند التركيز على العنصر</span><span class="en">State while element is focused</span></p></div>
+        </div>
+
+        <h3 class="sub-title"><span class="ar">2️⃣ صندوق العنصر (Box Model)</span><span class="en">2️⃣ Box Model</span></h3>
+        <div class="tag-grid">
+          <div class="tag-card"><code dir="ltr">width / height</code><p><span class="ar">العرض والارتفاع</span><span class="en">Element width and height</span></p></div>
+          <div class="tag-card"><code dir="ltr">margin</code><p><span class="ar">المسافة الخارجية بين العناصر</span><span class="en">Outer space between elements</span></p></div>
+          <div class="tag-card"><code dir="ltr">padding</code><p><span class="ar">المسافة الداخلية بين المحتوى والحدود</span><span class="en">Inner space (content ↔ border)</span></p></div>
+          <div class="tag-card"><code dir="ltr">border</code><p><span class="ar">الإطار: عرض ونوع ولون</span><span class="en">The border: width, style, color</span></p></div>
+          <div class="tag-card"><code dir="ltr">border-radius</code><p><span class="ar">استدارة الزوايا</span><span class="en">Rounded corners</span></p></div>
+          <div class="tag-card"><code dir="ltr">box-shadow</code><p><span class="ar">ظل للعنصر</span><span class="en">Drop shadow / glow</span></p></div>
+          <div class="tag-card"><code dir="ltr">box-sizing</code><p><span class="ar">border-box يجعل padding داخل العرض</span><span class="en">border-box includes padding in width</span></p></div>
+          <div class="tag-card"><code dir="ltr">display</code><p><span class="ar">block / inline / inline-block / none</span><span class="en">block / inline / inline-block / none</span></p></div>
+          <div class="tag-card"><code dir="ltr">overflow</code><p><span class="ar">ماذا يحدث عند امتلاء المحتوى: hidden / auto / scroll</span><span class="en">Content overflow: hidden / auto / scroll</span></p></div>
+          <div class="tag-card"><code dir="ltr">max-width / min-width</code><p><span class="ar">أقصى وأصغر عرض مسموح</span><span class="en">Allowed max / min width</span></p></div>
+          <div class="tag-card"><code dir="ltr">opacity</code><p><span class="ar">درجة الشفافية من 0 إلى 1</span><span class="en">Transparency from 0 to 1</span></p></div>
+          <div class="tag-card"><code dir="ltr">cursor</code><p><span class="ar">شكل المؤشر مثل pointer و help</span><span class="en">Pointer shape: pointer, help…</span></p></div>
+        </div>
+
+        <h3 class="sub-title"><span class="ar">3️⃣ النصوص والألوان</span><span class="en">3️⃣ Text &amp; Colors</span></h3>
+        <div class="tag-grid">
+          <div class="tag-card"><code dir="ltr">color</code><p><span class="ar">لون النص</span><span class="en">Text color</span></p></div>
+          <div class="tag-card"><code dir="ltr">background</code><p><span class="ar">لون أو تدرّج خلفية العنصر</span><span class="en">Background color or gradient</span></p></div>
+          <div class="tag-card"><code dir="ltr">font-family</code><p><span class="ar">خط الكتابة مع بدائل احتياطية</span><span class="en">Font family with fallbacks</span></p></div>
+          <div class="tag-card"><code dir="ltr">font-size</code><p><span class="ar">حجم الخط: px أو rem أو em</span><span class="en">Font size: px, rem, em…</span></p></div>
+          <div class="tag-card"><code dir="ltr">font-weight</code><p><span class="ar">سماكة الخط: normal / bold / 900</span><span class="en">Weight: normal / bold / 900</span></p></div>
+          <div class="tag-card"><code dir="ltr">font-style</code><p><span class="ar">مائل: normal / italic</span><span class="en">Style: normal / italic</span></p></div>
+          <div class="tag-card"><code dir="ltr">text-align</code><p><span class="ar">محاذاة النص: right / center / left / justify</span><span class="en">Alignment: right / center / left / justify</span></p></div>
+          <div class="tag-card"><code dir="ltr">text-decoration</code><p><span class="ar">خط سفلي أو إزالته: none / underline</span><span class="en">underline or none</span></p></div>
+          <div class="tag-card"><code dir="ltr">line-height</code><p><span class="ar">ارتفاع السطر (تباعد الأسطر)</span><span class="en">Line height / spacing</span></p></div>
+          <div class="tag-card"><code dir="ltr">text-shadow</code><p><span class="ar">ظل للنص</span><span class="en">Text shadow / glow</span></p></div>
+          <div class="tag-card"><code dir="ltr">text-transform</code><p><span class="ar">تحويل الحروف: uppercase / capitalize</span><span class="en">uppercase / lowercase / capitalize</span></p></div>
+          <div class="tag-card"><code dir="ltr">letter-spacing</code><p><span class="ar">التباعد بين الحروف</span><span class="en">Spacing between letters</span></p></div>
+          <div class="tag-card"><code dir="ltr">rgba() / hex</code><p><span class="ar">تعريف الألوان: #6ea8fe أو rgba(0,0,0,.5)</span><span class="en">Colors: hex #6ea8fe or rgba()</span></p></div>
+          <div class="tag-card"><code dir="ltr">linear-gradient()</code><p><span class="ar">تدرّج لوني خطي</span><span class="en">Linear color gradient</span></p></div>
+          <div class="tag-card"><code dir="ltr">radial-gradient()</code><p><span class="ar">تدرّج دائري (يُستخدم في توهج الخلفية)</span><span class="en">Radial gradient (glow effects)</span></p></div>
+          <div class="tag-card"><code dir="ltr">background-size</code><p><span class="ar">حجم الخلفية — أساس أنيماشن التدرّج</span><span class="en">Background size — key to gradient animation</span></p></div>
+        </div>
+
+        <h3 class="sub-title"><span class="ar">4️⃣ التخطيط: Flexbox و Grid والموضع</span><span class="en">4️⃣ Layout: Flex, Grid &amp; Position</span></h3>
+        <div class="tag-grid">
+          <div class="tag-card"><code dir="ltr">display: flex</code><p><span class="ar">تفعيل التخطيط المرن للحاوية</span><span class="en">Enables flex layout on container</span></p></div>
+          <div class="tag-card"><code dir="ltr">justify-content</code><p><span class="ar">توزيع العناصر أفقيًا: center, space-between</span><span class="en">Horizontal distribution: center…</span></p></div>
+          <div class="tag-card"><code dir="ltr">align-items</code><p><span class="ar">محاذاة العناصر رأسيًا: center, stretch</span><span class="en">Vertical alignment: center, stretch</span></p></div>
+          <div class="tag-card"><code dir="ltr">flex-direction</code><p><span class="ar">اتجاه التوزيع: row / column</span><span class="en">Direction: row / column</span></p></div>
+          <div class="tag-card"><code dir="ltr">flex-wrap</code><p><span class="ar">التفاف العناصر لسطر جديد</span><span class="en">Wraps items to a new line</span></p></div>
+          <div class="tag-card"><code dir="ltr">gap</code><p><span class="ar">المسافة بين عناصر التخطيط</span><span class="en">Space between flex/grid items</span></p></div>
+          <div class="tag-card"><code dir="ltr">display: grid</code><p><span class="ar">تخطيط شبكي بأعمدة وصفوف</span><span class="en">Grid layout with columns &amp; rows</span></p></div>
+          <div class="tag-card"><code dir="ltr">grid-template-columns</code><p><span class="ar">تعريف الأعمدة مثل 1fr 1fr 1fr</span><span class="en">Defines columns e.g. 1fr 1fr</span></p></div>
+          <div class="tag-card"><code dir="ltr">repeat(3, 1fr)</code><p><span class="ar">ثلاثة أعمدة متساوية العرض</span><span class="en">Three equal-width columns</span></p></div>
+          <div class="tag-card"><code dir="ltr">position: relative</code><p><span class="ar">موضع نسبي — أساس العناصر المطلقة</span><span class="en">Relative — base for absolute children</span></p></div>
+          <div class="tag-card"><code dir="ltr">position: absolute</code><p><span class="ar">مطلق بالنسبة لأقرب أب مُحدد</span><span class="en">Absolute to nearest positioned parent</span></p></div>
+          <div class="tag-card"><code dir="ltr">position: fixed</code><p><span class="ar">ثابت على الشاشة عند التمرير</span><span class="en">Stays fixed while scrolling</span></p></div>
+          <div class="tag-card"><code dir="ltr">position: sticky</code><p><span class="ar">يلتصق أثناء التمرير ثم يستقر</span><span class="en">Sticks while scrolling, then settles</span></p></div>
+          <div class="tag-card"><code dir="ltr">top / right / bottom / left</code><p><span class="ar">إزاحة العنصر من الجهات</span><span class="en">Offsets the element from each side</span></p></div>
+          <div class="tag-card"><code dir="ltr">z-index</code><p><span class="ar">ترتيب الطبقات (الأعلى يظهر فوق)</span><span class="en">Stacking order (higher wins)</span></p></div>
+          <div class="tag-card"><code dir="ltr">float</code><p><span class="ar">إطفاء النص حول الصورة (طريقة قديمة)</span><span class="en">Text wrap-around (legacy)</span></p></div>
+        </div>
+
+        <h3 class="sub-title"><span class="ar">5️⃣ الحركة والأنيماشن والتجاوب</span><span class="en">5️⃣ Motion, Animation &amp; Responsive</span></h3>
+        <div class="tag-grid">
+          <div class="tag-card"><code dir="ltr">transition</code><p><span class="ar">انتقال سلس عند تغيّر حالة العنصر</span><span class="en">Smooth change between states</span></p></div>
+          <div class="tag-card"><code dir="ltr">transform</code><p><span class="ar">تحريك وتدوير وتكبير: translate / rotate / scale</span><span class="en">translate / rotate / scale</span></p></div>
+          <div class="tag-card"><code dir="ltr">@keyframes</code><p><span class="ar">يحدد مراحل الأنيماشن من 0% إلى 100%</span><span class="en">Defines animation stages 0%→100%</span></p></div>
+          <div class="tag-card"><code dir="ltr">animation</code><p><span class="ar">تشغيل الأنيماشن: الاسم والمدة والتكرار</span><span class="en">Runs it: name, duration, iteration</span></p></div>
+          <div class="tag-card"><code dir="ltr">animation: infinite</code><p><span class="ar">تكرار الأنيماشن بلا نهاية</span><span class="en">Repeats the animation forever</span></p></div>
+          <div class="tag-card"><code dir="ltr">animation-delay</code><p><span class="ar">تأخير قبل بدء الحركة</span><span class="en">Delay before the motion starts</span></p></div>
+          <div class="tag-card"><code dir="ltr">ease / linear</code><p><span class="ar">منحنى السرعة: ناعم أو ثابت</span><span class="en">Timing: smooth or constant</span></p></div>
+          <div class="tag-card"><code dir="ltr">@media</code><p><span class="ar">قواعد تُطبَّق حسب حجم الشاشة (متجاوب)</span><span class="en">Rules per screen size (responsive)</span></p></div>
+          <div class="tag-card"><code dir="ltr">:hover</code><p><span class="ar">حالة مرور الفأرة — جرّبها على بطاقاتي!</span><span class="en">Hover state — try my cards!</span></p></div>
+          <div class="tag-card"><code dir="ltr">:root { --var }</code><p><span class="ar">متغيّرات CSS لإدارة الألوان مركزياً</span><span class="en">CSS variables for central colors</span></p></div>
+          <div class="tag-card"><code dir="ltr">var(--name)</code><p><span class="ar">استخدام المتغيّر داخل أي خاصية</span><span class="en">Uses the variable anywhere</span></p></div>
+          <div class="tag-card"><code dir="ltr">px / % / em / rem</code><p><span class="ar">وحدات القياس: ثابت، نسبة، نسبة للخط</span><span class="en">Units: fixed, %, font-relative</span></p></div>
+          <div class="tag-card"><code dir="ltr">vh / vw</code><p><span class="ar">نسبة من ارتفاع/عرض الشاشة</span><span class="en">% of viewport height/width</span></p></div>
+          <div class="tag-card"><code dir="ltr">@import / @media (prefers-color-scheme)</code><p><span class="ar">استيراد ملفات / احترام وضع النظام</span><span class="en">Import files / respect system dark mode</span></p></div>
+        </div>
+
+        <h3 class="sub-title"><span class="ar">6️⃣ جرّب المؤثرات (مرّر الفأرة)</span><span class="en">6️⃣ Live Effects (hover me)</span></h3>
+        <div class="demo-row">
+          <div class="demo">
+            <button class="demo-btn" type="button"><span class="ar">زر بتوهج متحرك</span><span class="en">Glowing button</span></button>
+            <p class="demo-cap">transition + box-shadow</p>
+          </div>
+          <div class="demo">
+            <div class="demo-card3d"><span>&lt;div&gt;</span></div>
+            <p class="demo-cap">transform: rotate + scale</p>
+          </div>
+          <div class="demo">
+            <div class="demo-shimmer"><span class="ar">شريط لامع</span><span class="en">Shimmer bar</span></div>
+            <p class="demo-cap">background-position + keyframes</p>
+          </div>
+          <div class="demo">
+            <div class="demo-spinner"></div>
+            <p class="demo-cap">animation: spin infinite</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== تاريخ لغات البرمجة / History ===== -->
+      <section id="history" class="section reveal">
+        <h2 class="sec-title"><span class="ar">🕰️ تأسيس وتطوير لغات البرمجة</span><span class="en">🕰️ The Story of Programming Languages</span></h2>
+        <p class="sec-sub">
+          <span class="ar">لغة البرمجة هي مجموعة قواعد وأوامر تُ下达 للحاسوب لتنفيذ مهمة معينة. مرّت لغات البرمجة بخمسة أجيال من أبسط شكل (أرقام الآلة) إلى أبسط شكل على الإنسان (الأوامر الطبيعية).</span>
+          <span class="en">A programming language is a set of rules and commands that tell the computer what to do. It evolved through five generations — from raw machine numbers to human-like commands.</span>
+        </p>
+
+        <div class="gen-grid">
+          <div class="gen-card">
+            <span class="gen-num">1</span>
+            <h3><span class="ar">الجيل الأول</span><span class="en">1st Generation</span></h3>
+            <p class="gen-years">1940s</p>
+            <p><span class="ar">لغة الآلة (Machine Language): أرقام ثنائية 0 و1 فقط يفهمها المعالج مباشرة. تحتاج إلى عالم في الفيزياء وتكلف وقتًا طويلًا.</span><span class="en">Machine Language: only 0 and 1 understood directly by the CPU. Extremely hard and slow to write.</span></p>
+            <p class="gen-ex"><code dir="ltr">10110000 01100001</code></p>
+          </div>
+          <div class="gen-card">
+            <span class="gen-num">2</span>
+            <h3><span class="ar">الجيل الثاني</span><span class="en">2nd Generation</span></h3>
+            <p class="gen-years">1950s</p>
+            <p><span class="ar">لغات التجميع (Assembly): استُبدلت الأرقام برموز مختصرة مثل MOV و ADD، مع وجود برنامج مُجمِّع (Assembler) يحوّلها للآلة.</span><span class="en">Assembly: binary replaced by short mnemonics (MOV, ADD) converted by an Assembler.</span></p>
+            <p class="gen-ex"><code dir="ltr">MOV AL, 61h</code></p>
+          </div>
+          <div class="gen-card">
+            <span class="gen-num">3</span>
+            <h3><span class="ar">الجيل الثالث</span><span class="en">3rd Generation</span></h3>
+            <p class="gen-years">1957 → الآن</p>
+            <p><span class="ar">لغات من المستوى العالي: Fortran و C و Python و Java و JavaScript — قريبة من الإنجليزية، تعمل على أي حاسوب، وتطوّرت منها معظم لغات اليوم.</span><span class="en">High-level languages: Fortran, C, Python, Java, JavaScript — English-like, portable, the base of most modern languages.</span></p>
+            <p class="gen-ex"><code dir="ltr">print("Hello")</code></p>
+          </div>
+          <div class="gen-card">
+            <span class="gen-num">4</span>
+            <h3><span class="ar">الجيل الرابع</span><span class="en">4th Generation</span></h3>
+            <p class="gen-years">1980s →</p>
+            <p><span class="ar">لغات من المستوى الممتاز (4GL): مثل SQL و PHP و HTML — موجهة لغرض معين كالقواعد بيانات وتطبيقات الويب، أقل كودًا وأسرع إنجازًا.</span><span class="en">4GL: SQL, PHP, HTML — purpose-built for databases and web apps, less code, faster results.</span></p>
+            <p class="gen-ex"><code dir="ltr">SELECT * FROM students;</code></p>
+          </div>
+          <div class="gen-card">
+            <span class="gen-num">5</span>
+            <h3><span class="ar">الجيل الخامس</span><span class="en">5th Generation</span></h3>
+            <p class="gen-years">2000s →</p>
+            <p><span class="ar">لغات الذكاء الاصطناعي: تعتمد على معالجة الطبيعة البشرية والاستدلال مثل Prolog و Python (مكتبات AI) وأدوات التعلم الآلي الحديثة.</span><span class="en">AI languages: natural-language processing and reasoning — Prolog, Python AI libraries and modern ML tools.</span></p>
+            <p class="gen-ex"><code dir="ltr">model.predict(data)</code></p>
+          </div>
+        </div>
+
+        <h3 class="sub-title"><span class="ar">أهم المحطات في تأسيس اللُّغات</span><span class="en">Milestones in Language History</span></h3>
+        <div class="timeline">
+          <div class="tl-item">
+            <span class="tl-dot"></span>
+            <span class="tl-year">1843</span>
+            <div class="tl-body">
+              <h4><span class="ar">أدا لوفلايس — أول خوارزمية</span><span class="en">Ada Lovelace — first algorithm</span></h4>
+              <p><span class="ar">وضعت أول خوارزمية مبرمجة لآلة تحليلية (محرك باباج)، وتعتبر أول مبرمجة في التاريخ.</span><span class="en">Wrote the first algorithm for Babbage's Analytical Engine — the first programmer in history.</span></p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <span class="tl-dot"></span>
+            <span class="tl-year">1957</span>
+            <div class="tl-body">
+              <h4>Fortran</h4>
+              <p><span class="ar">أول لغة من المستوى العالي ناجحة، صممها جون باكوس في IBM، وكانت للحسابات العلمية.</span><span class="en">The first successful high-level language, by John Backus at IBM, for scientific computing.</span></p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <span class="tl-dot"></span>
+            <span class="tl-year">1959</span>
+            <div class="tl-body">
+              <h4>COBOL</h4>
+              <p><span class="ar">صُممت للغة إنجليزية بسيطة لتطبيقات الأعمال والبنوك، ولا تزال تُستخدم حتى اليوم في الأنظمة القديمة.</span><span class="en">English-like business language — still used today in banking legacy systems.</span></p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <span class="tl-dot"></span>
+            <span class="tl-year">1972</span>
+            <div class="tl-body">
+              <h4>C</h4>
+              <p><span class="ar">أنشأها دينيس ريتشي في مختبلات بيل (Bell Labs)، وهي أم اللغات: منها اشتُقت C++ و Java و Python و PHP.</span><span class="en">Created by Dennis Ritchie at Bell Labs — the mother of C++, Java, Python and PHP.</span></p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <span class="tl-dot"></span>
+            <span class="tl-year">1980</span>
+            <div class="tl-body">
+              <h4>C++</h4>
+              <p><span class="ar">أضافها بيارن ستروستروب مفهوم البرمجة الكائنية (OOP) إلى لغة C.</span><span class="en">Bjarne Stroustrup added Object-Oriented Programming to C.</span></p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <span class="tl-dot"></span>
+            <span class="tl-year">1991</span>
+            <div class="tl-body">
+              <h4>Python &amp; HTML &amp; PHP</h4>
+              <p><span class="ar">غيدو فان روسوم أطلق Python (سهولة ووضوح)، و tim berners-lee وضع HTML لشبكة الويب، و PHP لصفحات الويب التفاعلية.</span><span class="en">Guido van Rossum released Python; Tim Berners-Lee created HTML for the Web; PHP arrived for dynamic pages.</span></p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <span class="tl-dot"></span>
+            <span class="tl-year">1995</span>
+            <div class="tl-body">
+              <h4>Java &amp; JavaScript &amp; CSS</h4>
+              <p><span class="ar">Java (جيمس جوسلنج) لكتابة برامج تعمل في أي نظام، و JavaScript (بريندان إيش) لتزيين صفحات الويب، و CSS (بيرن لي) لتنسيقها — وهي ثلاثتنا الأساسية في هذا الموقع!</span><span class="en">Java (James Gosling) — write once, run anywhere; JavaScript (Brendan Eich) for web behavior; CSS (Håkon Wium Lie) for styling — our core trio!</span></p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <span class="tl-dot"></span>
+            <span class="tl-year">2000</span>
+            <div class="tl-body">
+              <h4>C#</h4>
+              <p><span class="ar">لغة مايكروسوفت التنافسية لتطوير تطبيقات Windows والألعاب عبر Unity.</span><span class="en">Microsoft's language for Windows apps and Unity games.</span></p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <span class="tl-dot"></span>
+            <span class="tl-year">2009</span>
+            <div class="tl-body">
+              <h4>Go</h4>
+              <p><span class="ar">لغة جوجل للأنظمة السحابية والشبكات، بسيطة وسريعة جدًا.</span><span class="en">Google's cloud &amp; networking language — simple and very fast.</span></p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <span class="tl-dot"></span>
+            <span class="tl-year">2010</span>
+            <div class="tl-body">
+              <h4>Rust</h4>
+              <p><span class="ar">لغة Mozilla للأمان والأداء العالي، تحصد لقب "الأكثر إعجابًا" بين المبرمجين سنويًا.</span><span class="en">Mozilla's safety-first language — most admired language year after year.</span></p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <span class="tl-dot"></span>
+            <span class="tl-year">2012</span>
+            <div class="tl-body">
+              <h4>TypeScript</h4>
+              <p><span class="ar">مايكروسوفت أضافت أنواع البيانات (Types) إلى JavaScript لتصبح أكبر لغات الويب.</span><span class="en">Microsoft added static types to JavaScript — now the backbone of large web apps.</span></p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <span class="tl-dot"></span>
+            <span class="tl-year">2014 →</span>
+            <div class="tl-body">
+              <h4>Kotlin · Swift · Dart</h4>
+              <p><span class="ar">لغات حديثة لتطبيقات الموبايل (Kotlin لأندرويد، Swift لآيفون، Dart لـ Flutter) تركز على الأمان وسرعة التطوير.</span><span class="en">Modern mobile languages: Kotlin (Android), Swift (iOS), Dart (Flutter) — safe and fast to build with.</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="note">
+          <span class="ar">💡 <b>الفكرة الأهم:</b> كل لغة جديدة لم تُلغِ التي قبلها، بل وُلدت لحل مشكلة محددة: C للسرعة، Python للسهولة، JavaScript للويب، Swift للجوال. اختر اللغة حسب مشروعك!</span>
+          <span class="en">💡 <b>Key idea:</b> each new language was born to solve a specific problem — C for speed, Python for simplicity, JavaScript for the web, Swift for mobile. Pick the language that fits your project!</span>
+        </div>
+      </section>
+
+      <!-- ===== المحررات / Editors ===== -->
+      <section id="editors" class="section reveal">
+        <h2 class="sec-title"><span class="ar">🛠️ أحدث محررات الأكواد المجانية</span><span class="en">🛠️ Latest Free Code Editors</span></h2>
+        <p class="sec-sub">
+          <span class="ar">محرّر الشيفرة (Code Editor) هو برنامج الكتابة الخاص بالمبرمج. اختر ما يناسبك: محرّرات تُثبَّت على الجهاز (عادية) أو محرّرات تعمل من المتصفح مباشرة (مرئية/أونلاين) — جميعها مجانية.</span>
+          <span class="en">A code editor is the programmer's writing tool. Choose what fits you: installable desktop editors (normal) or browser-based visual editors (online) — all free.</span>
+        </p>
+
+        <h3 class="sub-title"><span class="ar">🌐 محررات أونلاين مرئية (من المتصفح مباشرة)</span><span class="en">🌐 Visual Online Editors (run in browser)</span></h3>
+        <div class="edit-grid">
+          <a class="edit-card" href="https://codepen.io/pen/" target="_blank" rel="noopener">
+            <div class="edit-head"><span class="edit-ico pen">CP</span><span class="tag-free">مجاني</span></div>
+            <h3>CodePen</h3>
+            <p><span class="ar">الأكثر شهرة لتجربة HTML و CSS و JS فورًا مع معاينة حيّة ومشاركة رابط لمشروعك.</span><span class="en">The most popular playground for instant HTML/CSS/JS with live preview and shareable links.</span></p>
+            <span class="edit-go"><span class="ar">افتح الموقع ↗</span><span class="en">Open ↗</span></span>
+          </a>
+          <a class="edit-card" href="https://jsfiddle.net/" target="_blank" rel="noopener">
+            <div class="edit-head"><span class="edit-ico jf">JF</span><span class="tag-free">مجاني</span></div>
+            <h3>JSFiddle</h3>
+            <p><span class="ar">محرّر كلاسيكي بمحطات منفصلة لـ HTML و CSS و JS مع زر تشغيل سريع.</span><span class="en">Classic editor with separate HTML/CSS/JS panes and a quick Run button.</span></p>
+            <span class="edit-go"><span class="ar">افتح الموقع ↗</span><span class="en">Open ↗</span></span>
+          </a>
+          <a class="edit-card" href="https://jsbin.com/" target="_blank" rel="noopener">
+            <div class="edit-head"><span class="edit-ico jb">JB</span><span class="tag-free">مجاني</span></div>
+            <h3>JS Bin</h3>
+            <p><span class="ar">بسيط وسريع جدًا، مثالي للتجربة السريعة أثناء الدرس.</span><span class="en">Very simple and fast — perfect for quick classroom experiments.</span></p>
+            <span class="edit-go"><span class="ar">افتح الموقع ↗</span><span class="en">Open ↗</span></span>
+          </a>
+          <a class="edit-card" href="https://stackblitz.com/" target="_blank" rel="noopener">
+            <div class="edit-head"><span class="edit-ico sb">SB</span><span class="tag-free">مجاني</span></div>
+            <h3>StackBlitz</h3>
+            <p><span class="ar">محرّر VS Code كامل يعمل داخل المتصفح بسرعة فائقة (تقنية WebContainers).</span><span class="en">A full VS Code experience inside your browser, powered by WebContainers.</span></p>
+            <span class="edit-go"><span class="ar">افتح الموقع ↗</span><span class="en">Open ↗</span></span>
+          </a>
+          <a class="edit-card" href="https://codesandbox.io/" target="_blank" rel="noopener">
+            <div class="edit-head"><span class="edit-ico cs">CS</span><span class="tag-free">مجاني</span></div>
+            <h3>CodeSandbox</h3>
+            <p><span class="ar">بيئة تطوير سحابية لمشاريع كاملة مع معاينة فورية ونشر سهل.</span><span class="en">A cloud dev environment for full projects with instant preview.</span></p>
+            <span class="edit-go"><span class="ar">افتح الموقع ↗</span><span class="en">Open ↗</span></span>
+          </a>
+          <a class="edit-card" href="https://www.w3schools.com/tags/tryit.asp?filename=tags_html_syntax" target="_blank" rel="noopener">
+            <div class="edit-head"><span class="edit-ico w3">W3</span><span class="tag-free">مجاني</span></div>
+            <h3>W3Schools Editor</h3>
+            <p><span class="ar">محرّر موقع W3Schools التعليمي — مثالي للمبتدئين للتجربة خطوة بخطوة.</span><span class="en">W3Schools' built-in editor — great for beginners learning step by step.</span></p>
+            <span class="edit-go"><span class="ar">افتح الموقع ↗</span><span class="en">Open ↗</span></span>
+          </a>
+          <a class="edit-card" href="https://replit.com/" target="_blank" rel="noopener">
+            <div class="edit-head"><span class="edit-ico rp">RP</span><span class="tag-free">مجاني</span></div>
+            <h3>Replit</h3>
+            <p><span class="ar">محرّر سحابي بمشاريع كاملة وتعاون فوري مع زملائك ونشر موقعك بضغطة.</span><span class="en">Cloud editor with full projects, live collaboration and one-click publish.</span></p>
+            <span class="edit-go"><span class="ar">افتح الموقع ↗</span><span class="en">Open ↗</span></span>
+          </a>
+          <a class="edit-card" href="https://github.com/features/codespaces" target="_blank" rel="noopener">
+            <div class="edit-head"><span class="edit-ico gh">GH</span><span class="tag-free">مجاني جزئيًا</span></div>
+            <h3>GitHub Codespaces</h3>
+            <p><span class="ar">بيئة برمجة سحابية من GitHub تعمل داخل VS Code مباشرة (رصيد مجاني شهريًا).</span><span class="en">GitHub's cloud environment that runs VS Code in the browser (free monthly hours).</span></p>
+            <span class="edit-go"><span class="ar">افتح الموقع ↗</span><span class="en">Open ↗</span></span>
+          </a>
+        </div>
+
+        <h3 class="sub-title"><span class="ar">💻 محررات سطح المكتب (عادية — تُثبَّت على الجهاز)</span><span class="en">💻 Desktop Editors (install on your PC)</span></h3>
+        <div class="edit-grid">
+          <a class="edit-card" href="https://code.visualstudio.com/" target="_blank" rel="noopener">
+            <div class="edit-head"><span class="edit-ico vs">VS</span><span class="tag-free">مجاني</span></div>
+            <h3>Visual Studio Code</h3>
+            <p><span class="ar">الأكثر استخدامًا في العالم: امتدادات لا نهائية، معاينة مدمجة، ودعم كامل لـ HTML و CSS. (المُوصى به)</span><span class="en">The world's most popular editor: endless extensions, built-in preview, full HTML/CSS support. (Recommended)</span></p>
+            <span class="edit-go"><span class="ar">تحميل ↗</span><span class="en">Download ↗</span></span>
+          </a>
+          <a class="edit-card" href="https://vscodium.com/" target="_blank" rel="noopener">
+            <div class="edit-head"><span class="edit-ico vc">VC</span><span class="tag-free">مفتوح المصدر</span></div>
+            <h3>VSCodium</h3>
+            <p><span class="ar">نسخة VS Code نظيفة تمامًا من التتبع والإعلانات، بنفس المزايا ومجانية 100%.</span><span class="en">VS Code without telemetry or branding — same features, 100% free.</span></p>
+            <span class="edit-go"><span class="ar">تحميل ↗</span><span class="en">Download ↗</span></span>
+          </a>
+          <a class="edit-card" href="https://notepad-plus-plus.org/" target="_blank" rel="noopener">
+            <div class="edit-head"><span class="edit-ico np">N+</span><span class="tag-free">مفتوح المصدر</span></div>
+            <h3>Notepad++</h3>
+            <p><span class="ar">خفيف جدًا وسريع، مثالي للطلاب: تلوين الأكواد والبحث داخل الملفات.</span><span class="en">Lightweight and fast — great for students: syntax color and file search.</span></p>
+            <span class="edit-go"><span class="ar">تحميل ↗</span><span class="en">Download ↗</span></span>
+          </a>
+          <a class="edit-card" href="https://www.sublimetext.com/" target="_blank" rel="noopener">
+            <div class="edit-head"><span class="edit-ico st">ST</span><span class="tag-free">مجاني للاستخدام</span></div>
+            <h3>Sublime Text</h3>
+            <p><span class="ar">سريع وأنيق بواجهة عصرية، يمكن استخدامه مجانًا بدون تحديد مدة.</span><span class="en">Fast, elegant and modern — free to use without a time limit.</span></p>
+            <span class="edit-go"><span class="ar">تحميل ↗</span><span class="en">Download ↗</span></span>
+          </a>
+          <a class="edit-card" href="https://pulsar-edit.dev/" target="_blank" rel="noopener">
+            <div class="edit-head"><span class="edit-ico pl">PL</span><span class="tag-free">مفتوح المصدر</span></div>
+            <h3>Pulsar</h3>
+            <p><span class="ar">البديل النشط لمحرّر Atom الشهير — خفيف وقابل للتخصيص بامتدادات مجانية.</span><span class="en">The modern successor to Atom — hackable and packed with free packages.</span></p>
+            <span class="edit-go"><span class="ar">تحميل ↗</span><span class="en">Download ↗</span></span>
+          </a>
+          <a class="edit-card" href="https://brackets.io/" target="_blank" rel="rel noopener">
+            <div class="edit-head"><span class="edit-ico br">BR</span><span class="tag-free">مفتوح المصدر</span></div>
+            <h3>Brackets</h3>
+            <p><span class="ar">محرّر مخصص لتصميم الويب من Adobe، بمعاينة حيّة على المتصفح أثناء التعديل.</span><span class="en">Adobe's web-design editor with live browser preview while editing.</span></p>
+            <span class="edit-go"><span class="ar">تحميل ↗</span><span class="en">Download ↗</span></span>
+          </a>
+          <a class="edit-card" href="https://acode.app/" target="_blank" rel="noopener">
+            <div class="edit-head"><span class="edit-ico ac">AC</span><span class="tag-free">مجاني</span></div>
+            <h3>Acode <small>(Android)</small></h3>
+            <p><span class="ar">محرّر احترافي يعمل على هاتف أندرويد — للكتابة والتعديل في أي مكان.</span><span class="en">A pro code editor for Android — write and edit anywhere.</span></p>
+            <span class="edit-go"><span class="ar">تحميل ↗</span><span class="en">Download ↗</span></span>
+          </a>
+          <a class="edit-card" href="https://www.eclipse.org/" target="_blank" rel="noopener">
+            <div class="edit-head"><span class="edit-ico ec">EC</span><span class="tag-free">مفتوح المصدر</span></div>
+            <h3>Eclipse</h3>
+            <p><span class="ar">محرّر كلاسيكي قوي لتطوير الويب والتطبيقات، شائع في الكليات والمعاهد.</span><span class="en">A classic powerful IDE for web and apps — common in colleges.</span></p>
+            <span class="edit-go"><span class="ar">تحميل ↗</span><span class="en">Download ↗</span></span>
+          </a>
+        </div>
+
+        <div class="note">
+          <span class="ar">⚡ <b>نصيحة:</b> ابدأ بـ <b>CodePen</b> أو <b>W3Schools</b> من المتصفح للتجربة الفورية، ثم انتقل إلى <b>VS Code</b> حين تريد حفظ مشاريعك على جهازك ونشرها على GitHub.</span>
+          <span class="en">⚡ <b>Tip:</b> start with <b>CodePen</b> or <b>W3Schools</b> for instant experiments, then move to <b>VS Code</b> when you want to save projects locally and publish them on GitHub.</span>
+        </div>
+      </section>
+
+      <!-- ===== المشاريع / Projects ===== -->
+      <section id="projects" class="section reveal">
+        <h2 class="sec-title"><span class="ar">🚀 مرجع المشاريع للطلاب</span><span class="en">🚀 Student Projects Reference</span></h2>
+        <p class="sec-sub">
+          <span class="ar">أفكار مشاريع جاهزة بمختلف المستويات، مع خطوات العمل النموذجية التي تُسلَّم بها أي مهمة في مادة ICT.</span>
+          <span class="en">Ready-made project ideas for every level, plus the standard workflow for any ICT assignment.</span>
+        </p>
+
+        <h3 class="sub-title"><span class="ar">💡 أفكار مشاريع</span><span class="en">💡 Project Ideas</span></h3>
+        <div class="idea-grid">
+          <div class="idea-card"><span class="idea-ico">🙋</span><h4><span class="ar">صفحة تعريف شخصي</span><span class="en">About Me Page</span></h4><p><span class="ar">صورتك + نبذة + مهاراتك + وسائط التواصل — أفضل مشروع لبداية مبتدئ.</span><span class="en">Photo, bio, skills and social links — the perfect first project.</span></p></div>
+          <div class="idea-card"><span class="idea-ico">🏫</span><h4><span class="ar">موقع مدرستي</span><span class="en">My School Website</span></h4><p><span class="ar">صفحة رئيسية + أقسام + جدول حصص + نماذج تواصل مع قائمة متحركة.</span><span class="en">Home, sections, timetable, contact form and a CSS menu.</span></p></div>
+          <div class="idea-card"><span class="idea-ico">🛒</span><h4><span class="ar">صفحة منتج / متجر</span><span class="en">Product / Store Page</span></h4><p><span class="ar">عرض منتجات ببطاقات وشبكة Grid وزر شراء وخصائص تفاعلية.</span><span class="en">Product cards, grid layout, buy button and hover effects.</span></p></div>
+          <div class="idea-card"><span class="idea-ico">🍽️</span><h4><span class="ar">صفحة وصفات طعام</span><span class="en">Recipes Page</span></h4><p><span class="ar">صور أطباق، مكونات في جدول، خطوات مرقمة وقائمة جانبية.</span><span class="en">Food photos, ingredients table, numbered steps and a sidebar.</span></p></div>
+          <div class="idea-card"><span class="idea-ico">🖼️</span><h4><span class="ar">معرض صور متجاوب</span><span class="en">Responsive Gallery</span></h4><p><span class="ar">شبكة صور تتغيّر أعمدتها مع حجم الشاشة + أنيماشن عند المرور.</span><span class="en">Image grid that reflows per screen size + hover animation.</span></p></div>
+          <div class="idea-card"><span class="idea-ico">📰</span><h4><span class="ar">صفحة أخبار / مدونة</span><span class="en">News / Blog Page</span></h4><p><span class="ar">ترويسة، مقال رئيسي، أعمدة أخبار، وسوم، وتذييل كامل.</span><span class="en">Header, featured article, news columns, tags and full footer.</span></p></div>
+          <div class="idea-card"><span class="idea-ico">📋</span><h4><span class="ar">نموذج تسجيل / استبيان</span><span class="en">Registration Form</span></h4><p><span class="ar">كل أنواع الحقول: نص، اختيار، تاريخ، ملف، مع تحقق أساسي.</span><span class="en">All field types: text, radio, date, file, with basic validation.</span></p></div>
+          <div class="idea-card"><span class="idea-ico">🎮</span><h4><span class="ar">صفحة ألعاب CSS</span><span class="en">CSS Games Page</span></h4><p><span class="ar">استخدم :hover و transition لصناعة ألعاب بدون أي JavaScript!</span><span class="en">Use :hover and transition to build games with zero JavaScript!</span></p></div>
+        </div>
+
+        <h3 class="sub-title"><span class="ar">🧭 خطوات تنفيذ أي مشروع</span><span class="en">🧭 Steps for Any Project</span></h3>
+        <ol class="steps">
+          <li><b><span class="ar">التحليل والتصميم:</span><span class="en">Analyze &amp; design:</span></b> <span class="ar">ارسم صفحاتك ورقيًا أولًا: ما القسم يحتوي؟ ما الألوان والخطوط؟</span><span class="en">Sketch your pages on paper first: sections, colors and fonts.</span></li>
+          <li><b><span class="ar">بناء الهيكل HTML:</span><span class="en">Build the HTML structure:</span></b> <span class="ar">أنشئ الملف index.html واكتب الأوامر من الأهم للأهم: header ثم sections ثم footer.</span><span class="en">Create index.html and write tags top-down: header, sections, footer.</span></li>
+          <li><b><span class="ar">التنسيق بـ CSS:</span><span class="en">Style with CSS:</span></b> <span class="ar">أنشئ style.css وابدأ بالمتغيّرات ثم الخطوط والألوان ثم التخطيط Flex/Grid.</span><span class="en">Create style.css: variables first, then fonts, colors, then Flex/Grid layout.</span></li>
+          <li><b><span class="ar">الحركة والأنيماشن:</span><span class="en">Add motion:</span></b> <span class="ar">أضف transition و hover و @keyframes لتجعل الموقع حيًّا — بدون JavaScript.</span><span class="en">Add transition, hover and @keyframes to bring it to life — no JavaScript.</span></li>
+          <li><b><span class="ar">التجربة والاختبار:</span><span class="en">Test:</span></b> <span class="ar">جرّب على المتصفح وعلى الموبايل، صحّح الأخطاء، وتأكد من عمل كل الرابطات.</span><span class="en">Test on desktop and mobile, fix errors and check every link.</span></li>
+          <li><b><span class="ar">النشر والتسليم:</span><span class="en">Publish &amp; submit:</span></b> <span class="ar">انشر الموقع على GitHub Pages وأرسل رابطه + الملفات المضغوطة للمعلّم.</span><span class="en">Publish on GitHub Pages and send the link + zipped files to the teacher.</span></li>
+        </ol>
+
+        <h3 class="sub-title"><span class="ar">📁 هيكل ملفات المشروع المعياري</span><span class="en">📁 Standard Project File Structure</span></h3>
+        <div class="code-window">
+          <div class="cw-bar"><i></i><i></i><i></i><span>my-project/</span></div>
+          <pre dir="ltr"><code>my-project/
+├── <span class="c-str">index.html</span>      <span class="c-com"># الصفحة الرئيسية (الهيكل)</span>
+├── <span class="c-str">style.css</span>       <span class="c-com"># ملف التنسيق (الشكل والحركة)</span>
+├── <span class="c-str">images/</span>         <span class="c-com"># مجلد الصور</span>
+│   ├── logo.png
+│   └── photo.jpg
+└── <span class="c-str">README.md</span>       <span class="c-com"># وصف المشروع</span></code></pre>
+        </div>
+
+        <div class="checklist">
+          <h4><span class="ar">✔️ قائمة مراجعة قبل التسليم</span><span class="en">✔️ Pre-submission Checklist</span></h4>
+          <ul>
+            <li><span class="ar">الصفحة تفتح بدون أخطاء في Console المتصفح</span><span class="en">Page opens with zero console errors</span></li>
+            <li><span class="ar">كل صورة لها سمة alt للوصولية</span><span class="en">Every image has an alt attribute</span></li>
+            <li><span class="ar">الخطوط مقروءة والتباين كافٍ على الخلفية</span><span class="en">Readable fonts and enough contrast</span></li>
+            <li><span class="ar">الموقع يعمل على الموبايل (عرض الشاشة)</span><span class="en">Responsive on mobile screens</span></li>
+            <li><span class="ar">كل رابط يعمل ويفتح في مكان صحيح</span><span class="en">Every link works and opens correctly</span></li>
+            <li><span class="ar">التوقيع موجود في التذييل: إنجاز الطالبة رزان شهاب</span><span class="en">Signature in the footer: coded by Razan Shehab</span></li>
+            <li><span class="ar">موجود عنوان title ووصف meta للفائدة</span><span class="en">title and meta description are set</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ===== النشر على GitHub / GitHub ===== -->
+      <section id="github" class="section reveal">
+        <h2 class="sec-title"><span class="ar">🌍 عرض موقعك على GitHub مجانًا</span><span class="en">🌍 Show Your Site on GitHub (Free)</span></h2>
+        <p class="sec-sub">
+          <span class="ar">GitHub Pages يحوّل ملفاتك إلى موقع حقيقي على الإنترنت برابط دائم — كل ذلك مجانًا وبخمس خطوات فقط.</span>
+          <span class="en">GitHub Pages turns your files into a real website with a permanent link — free, in just 5 steps.</span>
+        </p>
+
+        <ol class="steps gh-steps">
+          <li><b>1. <span class="ar">أنشئ حسابًا:</span><span class="en">Create an account:</span></b> <span class="ar">من <a href="https://github.com/signup" target="_blank" rel="noopener">github.com/signup</a> (مجاني تمامًا).</span><span class="en">from <a href="https://github.com/signup" target="_blank" rel="noopener">github.com/signup</a> (completely free).</span></li>
+          <li><b>2. <span class="ar">أنشئ مستودعًا (Repository):</span><span class="en">Create a repository:</span></b> <span class="ar">اضغط <b>New repository</b> وسمِّه مثل: <code dir="ltr">razan-ict-website</code> واختر <b>Public</b> ثم <b>Create repository</b>.</span><span class="en">Click <b>New repository</b>, name it e.g. <code dir="ltr">razan-ict-website</code>, choose <b>Public</b>, then <b>Create repository</b>.</span></li>
+          <li><b>3. <span class="ar">ارفع الملفات:</span><span class="en">Upload files:</span></b> <span class="ar">اضغط <b>uploading an existing file</b> واسحب ملف <code dir="ltr">index.html</code> ومجلد <code dir="ltr">css</code> و <code dir="ltr">README.md</code> ثم <b>Commit changes</b>.</span><span class="en">Click <b>uploading an existing file</b>, drag <code dir="ltr">index.html</code>, the <code dir="ltr">css</code> folder and <code dir="ltr">README.md</code>, then <b>Commit changes</b>.</span></li>
+          <li><b>4. <span class="ar">فعّل GitHub Pages:</span><span class="en">Enable GitHub Pages:</span></b> <span class="ar">من <b>Settings ← Pages</b>: اختر <b>Deploy from a branch</b> ← <b>main</b> ← <code dir="ltr">/ (root)</code> ← <b>Save</b>.</span><span class="en">From <b>Settings ← Pages</b>: choose <b>Deploy from a branch</b> ← <b>main</b> ← <code dir="ltr">/ (root)</code> ← <b>Save</b>.</span></li>
+          <li><b>5. <span class="ar">احصل على رابطك:</span><span class="en">Get your link:</span></b> <span class="ar">بعد دقيقة أو دقيقتين يصبح موقعك على الإنترنت:</span><span class="en">After 1–2 minutes your site is live at:</span><br><a class="link-demo" href="#" dir="ltr">https://YOUR-USERNAME.github.io/razan-ict-website/</a></li>
+        </ol>
+
+        <div class="note">
+          <span class="ar">✅ <b>لتعديل الموقع لاحقًا:</b> افتح المستودع ← اضغط <b>index.html</b> ← زر ✏️ تعديل ← عدّل الكود ← <b>Commit changes</b>، وينعكس التغيير خلال دقيقة.</span>
+          <span class="en">✅ <b>To edit later:</b> open the repo → click <b>index.html</b> → ✏️ edit → change the code → <b>Commit changes</b>. The update goes live within a minute.</span>
+        </div>
+      </section>
+
+      <!-- ===== الإيماء / Signature ===== -->
+      <section class="section signature reveal">
+        <div class="sig-card">
+          <div class="sig-seal">✍️</div>
+          <p class="sig-ar">تمت برمجة هذا الموقع بالكامل بواسطة الطالبة<br><b>رزان شهاب</b></p>
+          <p class="sig-en" dir="ltr">Coded entirely by the student <b>Razan Shehab</b></p>
+          <p class="sig-meta">
+            <span class="ar">مدرسة معالي الإسلام — الإشراف: مستر بلال اشرف — مادة Information Communication Technology (ICT)</span>
+            <span class="en">Maali Al-Islam School — Supervised by Mr. Bilal Ashraf — Subject: ICT</span>
+          </p>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ===== التذييل / Footer ===== -->
+    <footer class="footer">
+      <div class="foot-grid">
+        <div class="foot-col foot-brand">
+          <span class="logo-icon">&lt;/&gt;</span>
+          <h4><span class="ar">دليل HTML &amp; CSS التفاعلي</span><span class="en">Interactive HTML &amp; CSS Guide</span></h4>
+          <p><span class="ar">مرجع الطلاب في مادة الاتصالات وتكنولوجيا المعلومات.</span><span class="en">A reference for ICT students.</span></p>
+        </div>
+        <div class="foot-col">
+          <h4><span class="ar">أقسام الموقع</span><span class="en">Sections</span></h4>
+          <a href="#html"><span class="ar">أوامر HTML</span><span class="en">HTML Tags</span></a>
+          <a href="#css"><span class="ar">أوامر CSS</span><span class="en">CSS Properties</span></a>
+          <a href="#history"><span class="ar">تاريخ البرمجة</span><span class="en">Language History</span></a>
+          <a href="#editors"><span class="ar">المحرات المجانية</span><span class="en">Free Editors</span></a>
+        </div>
+        <div class="foot-col">
+          <h4><span class="ar">تواصل</span><span class="en">Contact</span></h4>
+          <a href="mailto:roz4egy@gmail.com" dir="ltr">roz4egy@gmail.com</a>
+          <a href="https://www.facebook.com/share/g/1FdMwbRAgD/" target="_blank" rel="noopener"><span class="ar">صفحة الفيسبوك ↗</span><span class="en">Facebook Page ↗</span></a>
+          <span class="foot-muted"><span class="ar">مدرسة معالي الإسلام</span><span class="en">Maali Al-Islam School</span></span>
+        </div>
+        <div class="foot-col">
+          <h4><span class="ar">التوقيع</span><span class="en">Signature</span></h4>
+          <span class="foot-sign">✍️ <b>Razan Shehab</b></span>
+          <span class="foot-muted"><span class="ar">المشرف: مستر بلال اشرف</span><span class="en">Supervisor: Mr. Bilal Ashraf</span></span>
+          <span class="foot-muted">ICT Project — 2026</span>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© 2026 — <span class="ar">جميع الحقوق محفوظة للطالبة رزان شهاب</span><span class="en">All rights reserved to Razan Shehab</span></span>
+        <span class="foot-made"><span class="ar">صُنع بـ HTML + CSS فقط — بدون أي JavaScript</span><span class="en">Built with HTML + CSS only — zero JavaScript</span></span>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
