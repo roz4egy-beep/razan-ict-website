@@ -22,7 +22,7 @@
   <meta property="og:type" content="website">
   <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20100%20100'%3E%3Ctext%20y='0.9em'%20font-size='90'%3E%F0%9F%8E%93%3C/text%3E%3C/svg%3E">
   <title>HTML &amp; CSS التفاعلي | رزان شهاب - ICT</title>
-  <link rel="stylesheet" href="css/style.css?v=4">
+  <link rel="stylesheet" href="css/style.css?v=5">
 </head>
 <body>
 
@@ -498,7 +498,15 @@
           <span class="en">A programming language is a set of rules and commands that tell the computer what to do. It evolved through five generations — from raw machine numbers to human-like commands.</span>
         </p>
 
-        <div class="gen-grid">
+        <div class="gen-slider">
+          <input type="radio" name="gen" id="gen-1" class="ctrl" checked>
+          <input type="radio" name="gen" id="gen-2" class="ctrl">
+          <input type="radio" name="gen" id="gen-3" class="ctrl">
+          <input type="radio" name="gen" id="gen-4" class="ctrl">
+          <input type="radio" name="gen" id="gen-5" class="ctrl">
+
+          <div class="gen-viewport">
+            <div class="gen-track">
           <div class="gen-card">
             <span class="gen-num">1</span>
             <h3><span class="ar">الجيل الأول</span><span class="en">1st Generation</span></h3>
@@ -533,6 +541,16 @@
             <p class="gen-years">2000s →</p>
             <p><span class="ar">لغات الذكاء الاصطناعي: تعتمد على معالجة الطبيعة البشرية والاستدلال مثل Prolog و Python (مكتبات AI) وأدوات التعلم الآلي الحديثة.</span><span class="en">AI languages: natural-language processing and reasoning — Prolog, Python AI libraries and modern ML tools.</span></p>
             <p class="gen-ex"><code dir="ltr">model.predict(data)</code></p>
+          </div>
+            </div>
+          </div>
+
+          <div class="gen-dots" role="group" aria-label="اختيار الجيل / Choose generation">
+            <label for="gen-1" class="gen-dot" title="الجيل الأول">1</label>
+            <label for="gen-2" class="gen-dot" title="الجيل الثاني">2</label>
+            <label for="gen-3" class="gen-dot" title="الجيل الثالث">3</label>
+            <label for="gen-4" class="gen-dot" title="الجيل الرابع">4</label>
+            <label for="gen-5" class="gen-dot" title="الجيل الخامس">5</label>
           </div>
         </div>
 
