@@ -4,7 +4,7 @@
 > **Coded entirely by the student: Razan Shehab**
 >
 > 🏫 مدرسة معالي الإسلام — Maali Al-Islam School
-> 👨‍🏫 الإشراف: مستر بلال اشرف — Supervised by Mr. Bilal Ashraf
+> 👨‍🏫 الإشراف: مستر بلال اسامة — Supervised by Mr. Bilal Osama
 > 💻 المادة: Information Communication Technology (ICT)
 > 📧 roz4egy@gmail.com
 > 📘 فيسبوك: <https://www.facebook.com/share/g/1FdMwbRAgD/>
@@ -101,7 +101,7 @@ razan-ict-website/
 
 > **تمت برمجة هذا الموقع بالكامل بواسطة الطالبة رزان شهاب**
 > **Coded entirely by the student Razan Shehab**
-> مدرسة معالي الإسلام — الإشراف: مستر بلال اشرف — مادة ICT — 2026
+> مدرسة معالي الإسلام — الإشراف: مستر بلال اسامة — مادة ICT — 2026
 
 التوقيع موجود أيضًا كتعليق (Comment) في أعلى كل ملف من ملفات الكود، وفي تذييل الموقع.
 The signature also appears as a comment at the top of every code file and in the site footer.
