@@ -1,7 +1,7 @@
 # 🎓 دليل HTML & CSS التفاعلي — Interactive HTML & CSS Guide
 
-> **✍️ تم بفضل إعداد وتأسيس الموقع بالكامل بواسطة رزان شهاب**
-> **This website was entirely prepared and established by: Razan Shehab**
+> **✍️ تم بحمد الله إعداد وتأسيس الموقع بالكامل بواسطة رزان شهاب**
+> **By the grace of God, this website was entirely prepared and established by: Razan Shehab**
 >
 > 🏫 مدرسة معالي الإسلام — Maali Al-Islam School
 > 👨‍🏫 الإشراف: مستر بلال اسامة — Supervised by Mr. Bilal Osama
@@ -99,8 +99,8 @@ razan-ict-website/
 
 ## ✍️ الإمضاء / Signature
 
-> **تم بفضل إعداد وتأسيس الموقع بالكامل بواسطة رزان شهاب**
-> **This website was entirely prepared and established by Razan Shehab**
+> **تم بحمد الله إعداد وتأسيس الموقع بالكامل بواسطة رزان شهاب**
+> **By the grace of God, this website was entirely prepared and established by Razan Shehab**
 > مدرسة معالي الإسلام — الإشراف: مستر بلال اسامة — مادة ICT — 2026
 
 التوقيع موجود أيضًا كتعليق (Comment) في أعلى كل ملف من ملفات الكود، وفي تذييل الموقع.
